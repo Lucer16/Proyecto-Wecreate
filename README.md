@@ -2,6 +2,8 @@
 
 ¡Bienvenido a mi portafolio personal! Este proyecto es una plataforma donde muestro mis habilidades, proyectos anteriores y servicios que ofrezco. Está construido utilizando **Bootstrap**, una herramienta poderosa para el diseño web responsivo, con el objetivo de reforzar mis conocimientos en esta tecnología y presentar mi trabajo de manera profesional.
 
+![Captura de Pantalla](https://github.com/Lucer16/Proyecto-Wecreate/blob/17a8df274bff373cb0c5e93cb14a04db1bb6bebe/Wecreate-en-curso.png)
+
 ## 🚀 Objetivo del Proyecto
 
 El objetivo principal de este proyecto es:
