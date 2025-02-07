@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeCreate</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Incluye Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye la fuente Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -55,39 +59,42 @@
         </div>
     </nav>
 
-    <!-- Bootstrap JS -->
+    <!-- Incluye Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Banner -->
-    <section class="text-white text-left py-5" style="background-image: url('img/Portada WeCreate 2.png');">
-            <div class="container banner-text">
-                <p class="lead">¡Tu página, tu universo!</p>
-                <h1 class="display-4">Infinitas opciones</h1>
-                <a class="display-4">para tu marca</a>
-                <button href="#" class="btn-lg mt-3 btn-cotizacion">Realizar cotización</button>
-            </div>
-    </section>
+<section class="text-white text-left py-0 m-0" style="background-image: url('img/Portada WeCreate 2.png');">
+    <div class="container banner-text">
+        <div class="transition-container">
+            <p class="lead">¡Tu página, tu universo!</p>
+            <h1 class="display-4">Infinitas opciones</h1>
+            <a class="display-4">para tu marca</a>
+            <button id="btn-cotizacion" class="btn-lg mt-3 btn-cotizacion">Realizar cotización</button>
+        </div>
+    </div>
+</section>
+
 
     <!-- Sección de características -->
-    <section class="bg-dark text-white py-2 caract-bg">
+    <section class="bg-dark text-white py-0 caract-bg">
             <div class="container text-center">
                 <p class="lead">Como el espacio, nuestras opciones de diseño son infinitas.</p>
                 <h2 class="mb-4">¡Haz despegar tu negocio con una web hecha a tu medida!</h2>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <div class="col-md-3 col-sm-6 mb-4">
-                        <img src="img/calidad.svg" alt="Calidad" class="mb-3" style="width: 15px;">
+                        <img src="img/calidad.svg" alt="Calidad" class="mb-0" style="width: 15px;">
                         <p class="feature-text">Calidad Garantizada</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
-                        <img src="img/soporte.svg" alt="Soporte" class="mb-3" style="width: 22px;">
+                    <div class="col-md-3 col-sm-6 mb-4 ">
+                        <img src="img/soporte.svg" alt="Soporte" class="mb-0" style="width: 22px;">
                         <p class="feature-text">Soporte Post-entrega</p>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-4">
-                        <img src="img/experiencia.svg" alt="Experiencia" class="mb-3" style="width: 22px;">
+                        <img src="img/experiencia.svg" alt="Experiencia" class="mb-0" style="width: 22px;">
                         <p class="feature-text">Experiencia Comprobada</p>
                     </div>
                     <div class="col-md-3 col-sm-6 mb-4">
-                        <img src="img/entregas.svg" alt="Entregas" class="mb-3" style="width: 20px;">
+                        <img src="img/entregas.svg" alt="Entregas" class="mb-0" style="width: 20px;">
                         <p class="feature-text">Entregas rápidas</p>
                     </div>
                 </div>
@@ -95,50 +102,101 @@
     </section>
 
     <!-- Sección de servicios -->
-    <section class="py-5">
-        <div class="container">
+    <section class="py-5 servicios-container">
+        <div class="container servicios-web">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="text-primary">Servicios de diseño web</p>
+                    <p class="subtitulo">Servicios de diseño web</p>
                     <h2>Diseños que llegan más allá</h2>
-                    <img src="img/cohete.png" alt="Diseño web" class="img-fluid">
+                    <img src="img/cohete.png" alt="Diseño web" class="img-fluid" style="width: 450px;">
                 </div>
                 <div class="col-md-6">
-                    <p>Creamos sitios web que no solo representan a tu negocio, sino que lo llevan a nuevas dimensiones.</p>
-                    <div class="mb-4">
+                    <p>Creamos sitios web que no solo representan a tu negocio, sino que lo llevan a nuevas dimensiones. Adaptados a tus necesidades y a precios accesibles, nuestros servicios te permiten alcanzar las estrellas.</p>
+                    <div class="mb-4 icono-texto">
                         <img src="img/explorar.svg" alt="Explorar" class="me-3" style="width: 30px;">
-                        <span>Explora nuevas fronteras con diseño adaptable.</span>
+                        <div class="texto-contenido">
+                            <span class="text-bold">Explora nuevas fronteras con diseño adaptable: </span>
+                            <span class="text-format">Tu sitio web se verá genial en cualquier dispositivo.</span>
+                        </div>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-4 icono-texto">
                         <img src="img/google.svg" alt="Google" class="me-3" style="width: 30px;">
-                        <span>Optimización SEO para mejorar tu visibilidad.</span>
+                        <div class="texto-contenido">
+                            <span class="text-bold">Optimización SEO para mejorar tu visibilidad: </span>
+                            <span class="text-format"> Como una estrella en el firmamento, serás visible para todos.</span>
+                        </div>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-4 icono-texto">
                         <img src="img/actualizacin.svg" alt="Actualización" class="me-3" style="width: 30px;">
-                        <span>Actualización de sitios existentes.</span>
+                        <div class="texto-contenido">
+                            <span class="text-bold">Actualización de sitios existentes: </span>
+                            <span class="text-format">Renueva tu web para que brille como una supernova.</span>
+                        </div>
                     </div>
-                    <div class="mb-4">
+                    <div class="mb-4 icono-texto">
                         <img src="img/monitor.svg" alt="Soporte" class="me-3" style="width: 30px;">
-                        <span>Soporte continuo.</span>
+                        <div class="texto-contenido">
+                            <span class="text-bold">Soporte continuo: </span>
+                            <span class="text-format"> Estamos aquí para ti, incluso después del lanzamiento.</span>
+                        </div>
                     </div>
+                    <div class="justify-content mb-0">
+                        <p>¡Nuestro compromiso es brindarte soluciones digitales innovadoras que impulsen tu crecimiento! Con un diseño atractivo, optimización efectiva y soporte constante, te ayudamos a destacar en el universo digital.</p>
+                    </div> 
                 </div>
+            </div>
             </div>
         </div>
     </section>
 
+    <!-- Sección de Tecnologías -->
+<div class="tecnologias-usadas py-5">
+    <div class="container text-center">
+        <!-- Título -->
+        <div class="titulo-tecnologias h2 mb-4">Tecnologías que usamos</div>
+
+        <!-- Carrusel de Bootstrap -->
+        <div id="tecnologiasCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Grupo 1 (activo) -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <!-- Logo 1 -->
+                        <div class="col-md-3 col-6">
+                            <img class="logo img-fluid" src="img/wordpress.png" alt="WordPress" style="width: 200px; height: 40px;">
+                        </div>
+                        <!-- Logo 2 -->
+                        <div class="col-md-3 col-6">
+                            <img class="logo img-fluid" src="img/elementor.png" alt="Elementor" style="width: 200px; height: 40px;">
+                        </div>
+                        <!-- Logo 3 -->
+                        <div class="col-md-3 col-6">
+                            <img class="logo img-fluid" src="img/figma.png" alt="Figma" style="width: 200px; height: 40px;">
+                        </div>
+                        <!-- Logo 4 -->
+                        <div class="col-md-3 col-6">
+                            <img class="logo img-fluid" src="img/google a.png" alt="Google Analytics" style="width: 200px; height: 40px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- Sección de testimonios -->
-    <section class="bg-light py-5">
+    <section class="py-5 testimonios">
         <div class="container text-center">
-            <p class="text-muted">Voces que resplandecen como estrellas</p>
+            <p class="subtitle-tes">Voces que resplandecen como estrellas</p>
             <h2 class="mb-5">Testimonios</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="card rounded-lg testimonios-card">
                         <img src="img/sara.svg" class="card-img-top mx-auto mt-3" alt="Sarah H." style="width: 100px;">
                         <div class="card-body">
-                            <p class="card-text">“¡El mejor servicio para emprendedores! Convirtieron mi idea en un universo de posibilidades.”</p>
+                            <p class="card-text reseña">“¡El mejor servicio para emprendedores! Convirtieron mi idea en un universo de posibilidades.”</p>
                             <h5 class="card-title">Sarah H.</h5>
-                            <p class="card-text text-muted">Tienda de Accesorios</p>
+                            <p class="card-text rubro">Tienda de Accesorios</p>
                         </div>
                     </div>
                 </div>
@@ -146,9 +204,9 @@
                     <div class="card">
                         <img src="img/carlos.svg" class="card-img-top mx-auto mt-3" alt="Carlos M." style="width: 100px;">
                         <div class="card-body">
-                            <p class="card-text">“Trabajo rápido, precios justos y atención personalizada. ¡Recomendado!”</p>
+                            <p class="card-text reseña">“Trabajo rápido, precios justos y atención personalizada. ¡Recomendado!”</p>
                             <h5 class="card-title">Carlos M.</h5>
-                            <p class="card-text text-muted">Propietario de Cafetería</p>
+                            <p class="card-text rubro">Propietario de Cafetería</p>
                         </div>
                     </div>
                 </div>
@@ -156,18 +214,16 @@
                     <div class="card">
                         <img src="img/maria.svg" class="card-img-top mx-auto mt-3" alt="María R." style="width: 100px;">
                         <div class="card-body">
-                            <p class="card-text">“¡El servicio fue excepcional desde el primer momento.¡Recomendado al 100%!”</p>
+                            <p class="card-text reseña">“¡El servicio fue excepcional desde el primer momento.¡Recomendado al 100%!”</p>
                             <h5 class="card-title">María R.</h5>
-                            <p class="card-text text-muted">Propietaria de Floristería</p>
+                            <p class="card-text rubro">Propietaria de Floristería</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <script src="scripts.js"></script>
-
+    
     <!-- Call to Action -->
     <section class="text-black text-center py-5 bg-callt">
             <div class="container">
@@ -221,10 +277,10 @@
             </div>
         </div>
     </footer>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Scripts personalizados -->
+    <script src="script.js"></script>
     <script src="scripts.js"></script>
+
 </body>
 </html>
