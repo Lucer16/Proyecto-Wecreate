@@ -16,10 +16,12 @@
     --background-claro: #F6F5F5;
     --background-claro-secundario: #F6F5F5;
     --background-oscuro: black;
+
+    --font-family: 'Poppins', 'Inter'; 
   }
 
 * {
-    font-family: 'Poppins', 'Inter';
+    font-family: var(--font-family)
 }
 
 /* Menú */
@@ -166,15 +168,19 @@
     display: flex;
   }
 
-  .contenedor-transicion {
-    transform: translateX(100%); 
-    transition: transform 2s ease-in-out; 
-    display: inline-block; 
+ /* Inicialmente oculta el contenedor y lo posiciona fuera de la pantalla */
+.transition-container {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
-.contenedor-transicion:hover {
-    transform: translateX(0); 
+/* Cuando la página carga, el contenedor se mueve a su posición original y se hace visible */
+.transition-container.show {
+    transform: translateX(0);
+    opacity: 1;
 }
+
 
 /*Features */
 
@@ -285,6 +291,14 @@
 .text-bold {
     display: inline;
 }
+
+/* Sección de Tecnologías */
+
+.tecnologías-usadas .h2{
+    font-size: var(--font-size-subtitulos);
+    font-weight: 700;
+}
+
 /* Sección Call to action */
 
 .bg-callt{
@@ -315,6 +329,70 @@
     color:#FFC1FB;
 }
 
+/* Sección de Testimonios */
+.testimonios {
+    background-color: black;
+    padding: 60px 0; 
+}
+.testimonios .subtitle-tes {
+    color: var(--color-principal);
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.testimonios .reseña{
+    font-size: 14px;
+    font-family: var(--font-family);
+}
+
+.testimonios .card-title {
+    color: var(--color-principal);
+}
+
+.testimonios h2 {
+    font-size: var(--font-size-subtitulos);
+    font-weight: var(--font-wreight-subtitulos);
+    color: white;
+    margin-bottom: 40px; 
+}
+
+/* Estilo personalizado para las tarjetas */
+.testimonios .card {
+    background-color: rgba(211, 211, 211, 0.15); 
+    border: none; 
+    border-radius: 15px; 
+    transition: transform 0.3s ease; 
+    color: white; 
+    padding: 20px; 
+}
+
+/* Efecto hover para las tarjetas */
+.testimonios .card:hover {
+    transform: translateY(-10px); 
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.testimonios .card-img-top {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin: 0 auto 15px; 
+}
+
+/* Estilo para el texto dentro de las tarjetas */
+.testimonios .card-body {
+    text-align: center; 
+}
+
+.testimonios .card-title {
+    margin-bottom: 10px; 
+}
+
+.testimonios .card-text {
+    margin-bottom: 15px; 
+}
+
 /* Sección Footer */
 
 .container p, h5, li{
@@ -332,4 +410,23 @@
 
 .bg-footer{
     background-color: #F6F5F5;
+}
+
+@media (max-width: 768px) {
+    .servicios-container {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+
+    .testimonios {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-bottom: 0;
+    }
+
+    .bg-footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
