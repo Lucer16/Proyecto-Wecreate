@@ -77,23 +77,23 @@
 
     <!-- Sección de características -->
     <section class="bg-dark text-white py-0 caract-bg">
-            <div class="container text-center">
+            <div class="container text-center filas-columnas">
                 <p class="lead">Como el espacio, nuestras opciones de diseño son infinitas.</p>
                 <h2 class="mb-4">¡Haz despegar tu negocio con una web hecha a tu medida!</h2>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-3 col-sm-6 mb-4">
+                <div class="row d-flex justify-content-center filas">
+                    <div class="col-md-3 col-sm-6 mb-4 columnas">
                         <img src="img/calidad.svg" alt="Calidad" class="mb-0" style="width: 15px;">
                         <p class="feature-text">Calidad Garantizada</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-4 ">
+                    <div class="col-md-3 col-sm-6 mb-4 columnas">
                         <img src="img/soporte.svg" alt="Soporte" class="mb-0" style="width: 22px;">
                         <p class="feature-text">Soporte Post-entrega</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="col-md-3 col-sm-6 mb-4 columnas">
                         <img src="img/experiencia.svg" alt="Experiencia" class="mb-0" style="width: 22px;">
                         <p class="feature-text">Experiencia Comprobada</p>
                     </div>
-                    <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="col-md-3 col-sm-6 mb-4 columnas">
                         <img src="img/entregas.svg" alt="Entregas" class="mb-0" style="width: 20px;">
                         <p class="feature-text">Entregas rápidas</p>
                     </div>
@@ -150,11 +150,10 @@
     </section>
 
     <!-- Sección de Tecnologías -->
-<div class="tecnologias-usadas py-5">
+<div class="tecnologias-usadas px-5">
     <div class="container text-center">
         <!-- Título -->
-        <div class="titulo-tecnologias h2 mb-4">Tecnologías que usamos</div>
-
+        <h2 class="titulo-tecnologias mb-4 tecnologias">Tecnologías que usamos</div>
         <!-- Carrusel de Bootstrap -->
         <div id="tecnologiasCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -223,7 +222,9 @@
             </div>
         </div>
     </section>
-    
+
+    <script src="scripts.js"></script>
+
     <!-- Call to Action -->
     <section class="text-black text-center py-5 bg-callt">
             <div class="container">
@@ -235,14 +236,14 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-white text-black py-5 d-flex justify-content-evenly bg-footer">
+    <footer class="bg-white text-black pt-5 pb-5 d-flex justify-content-evenly bg-footer">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-2">
                     <h5>WeCreate</h5>
                     <p>Es un servicio de Desarrollo y Diseño web, creamos experiencias digitales únicas y accesibles para elevar tu marca al siguiente nivel.</p>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-2">
                     <h5>Servicios</h5>
                     <ul class="list-unstyled">
                         <li>Desarrollo en Wordpress</li>
@@ -251,7 +252,7 @@
                         <li>Diseño a medida</li>
                     </ul>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-2">
                     <h5>Sobre Nosotros</h5>
                     <ul class="list-unstyled">
                         <li>Planes de Diseño web</li>
@@ -260,7 +261,7 @@
                         <li>Certificados</li>
                     </ul>
                 </div>
-                <div class="col-md-3 mb-4">
+                <div class="col-md-3 mb-2">
                     <h5>Contacto</h5>
                     <p>info@wecreate.com</p>
                     <p>+507 6377-4477</p>
@@ -272,15 +273,17 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <p>@ WeCreate 2024. Todos los derechos reservados.</p>
-            </div>
         </div>
     </footer>
+
+    <div class="text-center mt-1 footer">
+        <p>@ WeCreate 2024. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Scripts personalizados -->
     <script src="script.js"></script>
-    <script src="scripts.js"></script>
 
 </body>
 </html>
