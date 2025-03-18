@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeCreate</title>
     <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
@@ -19,7 +21,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">WeCreate</a>
+            <a class="navbar-brand" href="index.html">WeCreate</a>
             <!-- Botón para abrir el menú lateral -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -33,22 +35,22 @@
                 <div class="offcanvas-body justify-content-center">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Mi</a>
+                            <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portafolio</a>
+                            <a class="nav-link" href="Portafolio.html">Portafolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
+                            <a class="nav-link" href="servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQs</a>
+                            <a class="nav-link" href="faqs.html">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                         <div class="d-flex justify-content-end just-btn"> 
                             <button class="me-3 btn-contact">Agendar Cita</button>
@@ -76,7 +78,7 @@
 
 
     <!-- Sección de características -->
-    <section class="bg-dark text-white py-0 caract-bg">
+    <section class="text-white py-0 caract-bg">
             <div class="container text-center filas-columnas">
                 <p class="lead">Como el espacio, nuestras opciones de diseño son infinitas.</p>
                 <h2 class="mb-4">¡Haz despegar tu negocio con una web hecha a tu medida!</h2>
@@ -150,38 +152,23 @@
     </section>
 
     <!-- Sección de Tecnologías -->
-<div class="tecnologias-usadas px-5">
-    <div class="container text-center">
         <!-- Título -->
-        <h2 class="titulo-tecnologias mb-4 tecnologias">Tecnologías que usamos</div>
-        <!-- Carrusel de Bootstrap -->
-        <div id="tecnologiasCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Grupo 1 (activo) -->
-                <div class="carousel-item active">
-                    <div class="row justify-content-center">
-                        <!-- Logo 1 -->
-                        <div class="col-md-3 col-6">
-                            <img class="logo img-fluid" src="img/wordpress.png" alt="WordPress" style="width: 200px; height: 40px;">
-                        </div>
-                        <!-- Logo 2 -->
-                        <div class="col-md-3 col-6">
-                            <img class="logo img-fluid" src="img/elementor.png" alt="Elementor" style="width: 200px; height: 40px;">
-                        </div>
-                        <!-- Logo 3 -->
-                        <div class="col-md-3 col-6">
-                            <img class="logo img-fluid" src="img/figma.png" alt="Figma" style="width: 200px; height: 40px;">
-                        </div>
-                        <!-- Logo 4 -->
-                        <div class="col-md-3 col-6">
-                            <img class="logo img-fluid" src="img/google a.png" alt="Google Analytics" style="width: 200px; height: 40px;">
-                        </div>
-                    </div>
+        <div><h2 class="titulo-tecnologias tecnologias">Tecnologías que usamos</h2></div>
+        <section id="habilidades" class="py-1 habilidades-container">
+            <div class="carrusel-wrapper">
+                <div class="carrusel-container habilidades-a">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="devicon-html5-plain icono-habilidades" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" class="icono-habilidades" data-tecnologia="CSS3" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="icono-habilidades" data-tecnologia="JavaScript" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="icono-habilidades" data-tecnologia="Bootstrap" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="icono-habilidades" data-tecnologia="Tailwind CSS" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="icono-habilidades" data-tecnologia="React" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain-wordmark.svg" alt="WordPress" class="icono-habilidades" data-tecnologia="WordPress" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Google Console" class="icono-habilidades" data-tecnologia="Google Console" style="color: black; width: 40px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-plain.svg" alt="Figma" class="icono-habilidades" data-tecnologia="Figma" style="color: black; width: 40px;">
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+        </section>
 
     <!-- Sección de testimonios -->
     <section class="py-5 testimonios">
@@ -230,7 +217,7 @@
             <div class="container">
                 <h2>¿Listo para destacar en el mundo digital?</h2>
                 <p class="lead">Explora nuestros paquetes de diseño y descubre cómo podemos darle vida a tus ideas.</p>
-                <a href="#" class="btn btn-lg btn-callt">Ver planes</a>
+                <a href="servicios.html#planes" class="btn btn-lg btn-callt">Ver planes</a>
                 <p class="mt-3">Empieza tu camino hacia el éxito digital</p>
             </div>
     </section>
@@ -265,11 +252,11 @@
                     <h5>Contacto</h5>
                     <p>info@wecreate.com</p>
                     <p>+507 6377-4477</p>
-                    <div class="d-flex gap-3">
-                        <img src="img/facebook.svg" alt="Facebook" style="width: 25px;">
-                        <img src="img/instagram.svg" alt="Instagram" style="width: 25px;">
-                        <img src="img/threads.svg" alt="Threads" style="width: 25px;">
-                        <img src="img/whatsapp.svg" alt="Whatsapp" style="width: 25px;">
+                    <div class="d-flex gap-2 social-icons2">
+                        <a href="https://www.facebook.com/profile.php?id=61565999865901" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/wecreate.pro/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.threads.net/@wecreate.pro" class="social-icon"><i class="fab fa-threads"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=50763774477" class="social-icon"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -282,6 +269,7 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- Scripts personalizados -->
     <script src="script.js"></script>
 
