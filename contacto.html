@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCreate</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluye Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluye la fuente Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">WeCreate</a>
+            <!-- Botón para abrir el menú lateral -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menú lateral -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre-mi.html">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faqs.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <div class="d-flex justify-content-end just-btn"> 
+                            <button class="me-3 btn-contact">Agendar Cita</button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="contact-container py-5 section-contact">
+        <div class="row">
+            <!-- Información de Contacto -->
+            <div class="col-md-6">
+                <h2 class="contact-title">Contáctanos</h2>
+                <h3 class="contact-subtitle">Conectémonos <strong class="contact-subtitle3">y</strong> <strong class="contact-subtitle2">colaboremos</strong></h3>
+                <p class="py-3 contact-descrip">Si tienes alguna consulta, no dudes en escribirnos o llamarnos. Estamos aquí para ayudarte.</p>
+                <div class="icon-box1">
+                    <div class="icon-circle1"><i class="bi bi-telephone-fill"></i></div>
+                    <span>+507 123 4567</span>
+                </div>
+                <div class="icon-box1">
+                    <div class="icon-circle1"><i class="bi bi-envelope-fill"></i></div>
+                    <span>contacto@tuempresa.com</span>
+                </div>
+                <div class="icon-box1">
+                    <div class="icon-circle1"><i class="bi bi-geo-alt-fill"></i></div>
+                    <span>Ciudad de Panamá, Panamá</span>
+                </div>
+            </div>
+            <!-- Formulario de Contacto -->
+            <div class="col-md-6 px-5 py-5 form-contact">
+                <form action="correo.php" method="post">
+                    <div class="mb-0">
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre">
+                    </div>
+                    <div class="mb-0">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="tuemail@ejemplo.com">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensaje" class="form-label"></label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <button type="submit" class="w-100 btn-contact2">Enviar Mensaje</button>
+                    <input type="hidden" id="recaptchaResponse" name="recaptchaResponse">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script para reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js?render=TU_SITE_KEY"></script>
+<script>
+    document.getElementById('contactForm').addEventListener("submit", function(event) {
+        event.preventDefault();
+        grecaptcha.ready(function() {
+            grecaptcha.execute('TU_SITE_KEY', { action: 'submit' }).then(function(token) {
+                document.getElementById('recaptchaResponse').value = token;
+                document.getElementById('contactForm').submit();
+            });
+        });
+    });
+</script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Incluye Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Footer -->
+<footer class="bg-white text-black pt-5 pb-5 d-flex justify-content-evenly bg-footer">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-md-3 mb-2">
+                <h5>WeCreate</h5>
+                <p>Es un servicio de Desarrollo y Diseño web, creamos experiencias digitales únicas y accesibles para elevar tu marca al siguiente nivel.</p>
+            </div>
+            <div class="col-md-3 mb-2">
+                <h5>Servicios</h5>
+                <ul class="list-unstyled">
+                    <li>Desarrollo en Wordpress</li>
+                    <li>Mantenimiento de Webs</li>
+                    <li>Rediseño de Web</li>
+                    <li>Diseño a medida</li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+                <h5>Sobre Nosotros</h5>
+                <ul class="list-unstyled">
+                    <li>Planes de Diseño web</li>
+                    <li>Nuestro trabajo</li>
+                    <li>Cotizar ahora</li>
+                    <li>Certificados</li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-2">
+                <h5>Contacto</h5>
+                <p>info@wecreate.com</p>
+                <p>+507 6377-4477</p>
+                <div class="d-flex gap-2 social-icons2">
+                    <a href="https://www.facebook.com/profile.php?id=61565999865901" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/wecreate.pro/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.threads.net/@wecreate.pro" class="social-icon"><i class="fab fa-threads"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=50763774477" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="text-center mt-1 footer">
+    <p>@ WeCreate 2024. Todos los derechos reservados.</p>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Scripts personalizados -->
+<script src="script.js"></script>
+
+</body>
+</html>
